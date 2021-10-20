@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: "Roboto",Arial,sans-serif;
+    
+}
+:root{
+    --primary-color: #eee;
+    /* var(--primary-color) */
+}
+body{
+    background-color: var(--primary-color);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 40px ;
+    
+}
+.header .pro-icon, .app-icon{
+    width: 32px;
+    height: 32px;
+}
+.header .pro-icon{
+    border-radius: 59%;
+}
+.header .main-icon{
+    width: 183px;
+    height: 39px;
+}
+.header .search-bar{
+    text-align: center;
+    width: 689px;
+    height: 28px;
+    border: solid 1px #4683ea;
+}
+.header button{
+    height: 30px;
+    width: 60px;
+    margin-left: -4px;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);;
+}
+/* left nav */
+nav{
+    display: flex;
+}
+.left-nav{
+    width: 127px;
+    display: flex;
+}
+.left-nav .left-nav1{
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    text-align: center;
+    
+    
+    
+}
+.left-nav1 img{
+    width: 22px;
+    height: 22px;
+}
+.left-nav1 .img-div{
+    width: 65px;
+    height: 48px;
+    padding: 20px;
+    
+}
+.brown{
+    background-color: #444444;
+}
+.green{
+    background-color:#689f38;;
+}
+.red{
+    background-color: #ed3b3b;
+}
+.blue{
+    background-color: #039be5;
+}
+.cyan{
+    background-color: #658092;;
+}
+.left-nav2 div{
+    width: 170px;
+    height: 48px;
+    padding: 20px;
+    color:#555555;
+    background-color: white;
+}
+.left-nav2 .apps:hover{
+    background-color: #689f38;
+    transition: 0.5s ease-in-out;
+}
+.left-nav2 .movies:hover{
+    background-color: #ed3b3b;
+    transition: 0.5s ease-in-out;
+}
+.left-nav2 .books:hover{
+    background-color: #039be5;
+    transition: 0.5s ease-in-out;
+}
+.left-nav2 .devices:hover{
+    background-color: #658092;
+    transition: 0.5s ease-in-out;
+}
+.left-nav3 {
+    width: 235px;
+    height: 440px;
+    background-color: var(--primary-color);
+}
+.left-nav3 div{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/* top nav */
+.top-nav{
+    width: 1283px;
+    height: 50px;
+    background-color: white;
+    margin-left: 2px;
+    display: flex;
+    justify-content: right;
+    padding: 16px 30px 0 0;
+    position: absolute;
+    right: 0px;
+    
+}
+.top-nav img{
+    width: 21px;
+    height: 21px;
+}
+.top-nav button{
+    border: solid 1px gray;
+    border-radius: 4px;
+    width: 46px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: white;
+    padding-top: 2px;
+}
+/* Main */
+main .container{
+    
+    width: 1283px;
+    
+    position: relative;
+    top: 52px;
+    right: 0px;
+    padding: 40px 30px;
+    
+}
+.card{
+    margin-top: 10px;
+    height: 300px;
+    width: 160px;
+    position: relative;
+
+}
+.card .bright:hover{
+    filter: contrast(50%);
+}
+.card h4{
+    font-size: 16px;
+    margin-left: 5px;
+    color: #333333;
+}
+.card p{
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: 2px;
+    color: #333333;
+}
+
+.card .play{
+    
+    display: none;
+}
+.card:hover .play{
+    position: absolute;
+    filter: contrast(80%);
+    left: 25px;
+    top: 55px;
+    display: inline-block;
+    z-index: 5;
+    transition: 0.5s ease-in-out;
+}
+
+.rating{
+    height: 32px;
+    width: 59px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.movie{
+    display: flex;
+    justify-content: space-evenly;
+}
+
